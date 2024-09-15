@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // create an array of type User and initialize
         List<User> myUserList = new ArrayList<>();
 
         User user1 = new User("John", "Doe", false, false, false);
@@ -14,6 +15,7 @@ public class Main {
         User user3 = new User("Frank", "Doe", false, true, true);
         myUserList.add(user3);
 
+        // loop through the array with confirm DiscountAmount calculations are correct
         for (User user : myUserList) {
             printUserDiscount(user);
         }
