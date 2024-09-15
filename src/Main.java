@@ -31,33 +31,35 @@ public class Main {
             this.IsSenior = senior;
             this.IsFirstResponder = firstResponder;
             this.IsMilitary = military;
+            this.DiscountAmount = 0;
         }
         public String FirstName;
         public String LastName;
         public Boolean IsSenior;
         public Boolean IsFirstResponder;
         public Boolean IsMilitary;
+        public int DiscountAmount;
     }
 
     public static void printUserDiscount(User user)
     {
-        int DiscountAmount = 0;
+        //int DiscountAmount = 0;
 
         if(user.IsSenior)
         {
-            DiscountAmount += 15;
+            user.DiscountAmount += 15;
         }
 
         if(user.IsFirstResponder)
         {
-            DiscountAmount += 10;
+            user.DiscountAmount += 10;
         }
 
         if(user.IsMilitary)
         {
-            DiscountAmount += 12;
+            user.DiscountAmount += 12;
         }
 
-        System.out.println(user.FirstName + ", " + user.LastName + ", " + DiscountAmount + "% Discount \n");
+        System.out.println(user.FirstName + ", " + user.LastName + ", " + user.DiscountAmount + "% Discount \n");
     }
 }
