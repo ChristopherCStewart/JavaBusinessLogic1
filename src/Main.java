@@ -1,12 +1,8 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
         List<User> myUserList = new ArrayList<>();
 
         User user1 = new User("John", "Doe", false, false, false);
@@ -63,5 +59,3 @@ public class Main {
         System.out.println(user.FirstName + ", " + user.LastName + ", " + DiscountAmount + "% Discount \n");
     }
 }
-
-
