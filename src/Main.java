@@ -2,7 +2,6 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,9 +18,8 @@ public class Main {
         User user3 = new User("Frank", "Doe", false, true, true);
         myUserList.add(user3);
 
-        for (int i = 0; i < myUserList.size(); i++)
-        {
-            printUserDiscount(myUserList.get(i));
+        for (User user : myUserList) {
+            printUserDiscount(user);
         }
     }
 
