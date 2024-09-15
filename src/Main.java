@@ -43,8 +43,6 @@ public class Main {
 
     public static void printUserDiscount(User user)
     {
-        //int DiscountAmount = 0;
-
         if(user.IsSenior)
         {
             user.DiscountAmount += 15;
