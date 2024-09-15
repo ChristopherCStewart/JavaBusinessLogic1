@@ -6,7 +6,7 @@ public class Main {
         // create an array of type User and initialize
         List<User> myUserList = new ArrayList<>();
 
-        User user1 = new User("John", "Doe", false, false, false);
+        User user1 = new User("John", "Doe", true, false, false);
         myUserList.add(user1);
 
         User user2 = new User("Bob", "Doe", true, true, true);
@@ -58,6 +58,7 @@ public class Main {
             user.DiscountAmount += 12;
         }
 
-        System.out.println(user.FirstName + ", " + user.LastName + ", " + user.DiscountAmount + "% Discount \n");
+        System.out.println(user.FirstName + ", " + user.LastName + ", " + user.DiscountAmount + "% Discount. ");
+        System.out.println("A $100 purchase would only cost you $" + (100 - user.DiscountAmount) + " today. \n\n");
     }
 }
