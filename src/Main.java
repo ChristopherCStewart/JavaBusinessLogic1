@@ -31,14 +31,14 @@ public class Main {
             this.IsSenior = senior;
             this.IsFirstResponder = firstResponder;
             this.IsMilitary = military;
-            this.DiscountAmount = 0;
+            this.DiscountAmount = 0.00;
         }
         public String FirstName;
         public String LastName;
         public Boolean IsSenior;
         public Boolean IsFirstResponder;
         public Boolean IsMilitary;
-        public int DiscountAmount;
+        public Double DiscountAmount;
     }
 
     public static void printUserDiscount(User user)
@@ -59,6 +59,6 @@ public class Main {
         }
 
         System.out.println(user.FirstName + ", " + user.LastName + ", " + user.DiscountAmount + "% Discount. ");
-        System.out.println("A $100 purchase would only cost you $" + (100 - user.DiscountAmount) + " today. \n\n");
+        System.out.println("You would save $" + user.DiscountAmount + " on a $100 purchase today! \n\n");
     }
 }
